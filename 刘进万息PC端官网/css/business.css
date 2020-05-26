@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li,a,body{
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+       /* background-color: rgb(201, 197, 192); */
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(240,242,248); */
+    width: 100%;
+    position: relative;
+    color: rgb(103,103,103);
+    font-size: .875rem;
+}
+.main .list-main:nth-child(2n){
+    background-color: rgb(241,245,255);
+}
+.list-main:nth-child(n){
+    height: 582px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.list-main:nth-child(2n){
+    height: 582px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.list-main:nth-child(2n) .main-app{
+    margin-left: 140px;
+
+}
+.list-main:nth-child(2n+1) .main-app{
+    margin-left: -30px;
+
+}
+.main-app{
+    width: 550px;
+}
+.main-app h2{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 450;
+    font-style: initial;
+    font-family: "微软雅黑";
+    margin-bottom: 28px;
+}
+.main-app h3{
+    font-size: 1.125rem;
+    font-weight: initial;
+    margin-bottom: 30px;
+}
+.list-main h2 span{
+    display: inline-block;
+    color:  rgb(238,122,27);
+}
+.list-main h3 span{
+    color: rgb(53,53,53);
+}
+.main-app p{
+  
+    margin-bottom: 30px;
+}
+.list-main:nth-child(4) .main-app h3{
+    margin-top: -20px;
+}
+.main-app p:nth-child(1){
+    margin-bottom: 30px;
+}
+.orange{
+    margin-top: 50px;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 6px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(238,122,27);
+}
+.orange:hover{
+    color: rgb(218,229,251);
+    background-color: rgb(54,176,122);
+}
+.tr{
+    font-size: .875rem;
+    margin-bottom: 2.25rem;
+}
+.tr .circle{
+    text-align: center;
+    color: rgb(240,242,248);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    display: inline-block;
+    position: relative;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 2.125rem;
+    margin-right: -38px;
+    background-color: rgb(238,122,27);
+    z-index: 11;
+}
+.tr .middle-layer{
+    line-height: 2.5rem;
+    display: inline-block;
+    position: relative;
+    margin-right: -22px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    margin-bottom: -3px;
+    background-color:rgb(240,242,248);
+    z-index: 8;
+}
+.tr .box{
+    line-height: 34px;
+    text-align: center;
+    color: rgb(240,242,248);
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 34px;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 34px;
+    background-color: rgb(238,122,27);
+    z-index: 5;
+}
+.website-process {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.iconfont.iconzhixiangshangshangjiantou {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: #cccccc;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+}
+.iconfont.iconzhixiangshangshangjiantou:hover {
+    background: #ff9900;
+}
+.website-pro-con {
+    margin: 80px 0;
+}
+.con-tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.con-tit h4 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.con-tit .en {
+    margin-top: 5px;
+    line-height: 28px;
+    font-size: 10px;
+    color: #999999;
+    border-top: 2px #ff9900 solid;
+}
+.elve-list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elve-list div{
+    width: 200px;
+    text-align: center;
+}
+
+.elve {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/pulib/jl-img.png);
+}
+.communication {
+    background-position: 10px -300px;
+}
+.hetong {
+    background-position: -80px 0px;
+}
+.dingjin {
+    background: url(../images/pulib/elve1.png);
+    background-repeat: no-repeat;
+    background-position-x: 20px; 
+}
+.sheji {
+    position: relative;
+    top: 10px;
+    background-position: -80px -200px; 
+}
+.chengxu {
+    position: relative;
+    top: 10px;
+    background-position: -85px -300px; 
+}
+.weikuan {
+    background-position: -80px -100px; 
+}
+.shangxian {
+    position: relative;
+    top: 15px;
+    background-position: -185px 0;
+}
+.shouhou {
+    position: relative;
+    top: 15px;
+    background-position: -176px -100px;
+}
+.elve-text{
+    color: #333333;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.elve-list .iconxiangyou {
+    position: relative;
+    top: -30px;
+    font-size: 50px;
+    color:#cccccc;
+}

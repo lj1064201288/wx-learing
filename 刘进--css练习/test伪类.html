@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test伪类</title>
+    <style>
+        body{
+            background: red;
+        }
+        .opt:before{
+            content: 'H';
+        }
+        .opt:after{
+            content: 'd';
+        }
+        .opt{
+            text-transform: capitalize;
+        }
+        .triangle{
+            width: 0;
+            height: 0;
+            /*border-top: 50px solid red;*/
+            /*border-right: 50px green solid;*/
+            /*border-bottom: 50px solid blue;*/
+            /*border-left:50px solid yellow;*/
+            border: 50px solid transparent; /*这里我们将元素的边框宽度设置为50px，transparent表示边框颜色是透明的，solid表示边框是实线的*/
+            border-top-color: black; /*这里我们仅将上边框的颜色设置为黑色，众所周知，css后面的样式代码会覆盖之前的相同的样式代码，至于其他三边的还是透明色*/
+        }
+        .test-div{
+            position: relative; /*相对定位*/
+            width: 150px;
+            height: 36px;
+            border-radius: 5px;
+            border: black solid 1px;
+            background: rgba(245,245,245, 1);
+        }
+        .test-div:before, .test-div:after{
+            content: '';/*必带属性*/
+            display: block;
+            position: absolute;
+            top: 8px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+        }
+        .test-div:before{
+            left: -11px;
+            border-right-color: rgba(245, 245, 245, 1);
+            z-index: 1;
+        }
+        .test-div:after{
+            left: -12px;
+            border-right-color: rgba(0, 0, 0, 1);
+            z-index: 0;
+        }
+        .items{
+            position: absolute;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            background: #00AA88;
+        }
+        .item0{
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+        }
+        .item1{
+            border-top-color: #0E0E6D;
+            position: absolute;
+            top: 200px;
+        }
+        .item2{
+            border-top-color: #00b3ee;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+        .item3{
+            border-bottom-color: yellow;
+            position: absolute;
+            top: -100px;
+
+        }
+        .item4{
+            border-bottom-color: yellowgreen;
+            position: absolute;
+            top: -100px;
+            left: 100px;
+        }
+        .item5{
+            border-right-color: blue;
+            position: absolute;
+            left: -100px;
+        }
+        .item6{
+            border-right-color: purple;
+            position: absolute;
+            left: -100px;
+            top: 100px;
+        }
+        .item7{
+            border-left-color: green;
+            position: absolute;
+            left: 200px;
+        }
+        .item8{
+            border-left-color: purple;
+            position: absolute;
+            left: 200px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p class="opt">ello worl</p>
+    <div class="triangle"></div>
+    <div class="test-div"></div>
+    <div class="items">
+        <div class="item1 item0"></div>
+        <div class="item2 item0"></div>
+        <div class="item3 item0"></div>
+        <div class="item4 item0"></div>
+        <div class="item5 item0"></div>
+        <div class="item6 item0"></div>
+        <div class="item7 item0"></div>
+        <div class="item8 item0"></div>
+    </div>
+
+</body>
+</html>

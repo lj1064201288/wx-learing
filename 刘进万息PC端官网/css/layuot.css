@@ -1,0 +1,31 @@
+.layear {
+    position: relative;
+    margin: 10px;
+}
+.nav-list .layear {
+    margin: 10px 20px;
+}
+.nav-list li:nth-last-child(1)>.layear  {
+    margin-right: 0;
+}
+.pro-list .layear {
+    margin: 0;
+    margin-right: 20px;
+    height: 210px;
+    background: #f8f8f8;
+    padding: 20px;
+}
+.pro-list li:nth-last-child(1) .layear {
+    margin: 0;
+}
+.pro-list .odd:hover {
+    background: #ffa102;
+    
+}
+.pro-list .eve:hover {
+    background: #ec9502;
+    
+}
+.pro-list .layear:hover a, .pro-list .layear:hover p{
+    color: #ffffff;
+}

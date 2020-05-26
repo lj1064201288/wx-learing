@@ -1,0 +1,246 @@
+/* *{
+    max-width:1200px;
+    margin:0;
+    padding:0;
+    margin:0 auto;
+    list-style: none; 
+} */
+
+.news-list-title{
+    max-width:1200px;
+    margin:0 auto;
+}
+section {
+    max-width:1200px;
+    margin:0 auto;
+}
+.news-list-title h3{
+    width: 1200px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 80px;
+    position: absolute;
+    color:#333;
+
+   
+}
+
+.news-list-title span{
+    position: relative;
+    top:65px;
+    bottom:0;
+    left:500px;
+    right:0; ;
+    font-size: 40px;
+    color:#e6e6e6;
+
+} 
+/* 下面是右侧三个按钮 */
+
+.button{
+    display: block;
+    width:1200px;
+    padding: 80px 0;
+    padding-bottom: 30px;
+}
+.news-type{
+    float:right;
+    width:21.5%;
+}
+
+.news-type span{
+    display:inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    padding:0 10px;
+    border:1px #ccc solid;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.news-type a{
+    text-decoration: none;
+    color:#333;
+}
+
+.news-type span:hover{
+    background-color: #ffa000;
+    border:1px #ffa000 solid;
+    
+}
+.news-type a:hover{
+    color:#fff;
+
+}
+
+/*下面是新闻列表 */
+
+.list{
+    margin:0;
+}
+
+
+
+.list img{
+    width:330px;
+    height:165px;
+    object-fit: cover;
+    margin:10px 0;
+ 
+
+ }
+
+.list li{
+  display: flex;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  margin:10px 0;
+  border-bottom:1px #ccc dashed;
+  
+
+}
+
+.news-right{
+    display:flex;
+    flex-direction: column;
+    margin:0 10px;
+ 
+}
+.news-content h4{
+    font-size: 16px;
+    color:#333;
+    cursor: pointer;
+    margin-top:10px;
+  
+
+}
+
+.news-content h4:hover{
+    color: #ffa000;
+}
+
+.news-content p{
+    font-size: 12px;
+    color:#333;
+    margin:5px 0;
+    padding-right:10px;
+    text-align:justify;
+    line-height: 24px;
+    letter-spacing:0.4px;
+
+}
+
+.news-content p a{
+    text-decoration: none;
+
+}
+
+.news-content p a:hover{
+    color:#ffa000;
+}
+
+.news-buttons span{
+    display:inline-block;
+    font-size: 10px;
+    line-height: 24px;
+    padding:0 10px;
+    border:1px #ccc solid;
+    background-color: #ccc;
+    border-radius: 5px;
+  
+
+}
+
+.news-buttons a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.news-buttons span:hover{
+    background-color: #ffa000;
+    border:1px #ffa000 bsolid;
+    
+}
+
+.news-viewer{
+
+    display:flex;
+    justify-content: space-between;
+    margin-top:15px;
+ 
+
+   
+}
+.news-viewer p{
+    font-size:12px;
+    color:#ccc;
+}
+
+.date{
+    color:#333;
+}
+
+
+/* 下面是页码 */
+
+.page-number{
+    display: flex;
+    margin:40px 0;
+    justify-content: center;
+}
+.page-list{
+    display:flex;
+}
+
+.page-list li{
+    padding:0 10px;
+    border:1px #ccc solid;border-left: none;
+    line-height:28px;
+    cursor: pointer;
+}
+
+.page-list li:first-child{
+    border-left:1px #ccc solid;
+}
+
+.page-list li:nth-child(8){
+    margin:0 5px;
+    border:1px #fff solid;
+
+}
+
+.page-list li input{
+    width:30px;
+    line-height: 24px;
+    font-size:14px;
+    padding-left:20px;
+    margin:0 5px;
+    border:1px #ccc solid;
+}
+.page-list li:last-child{
+    border-left:1px #ccc solid;
+
+}
+.page-list li:last-child a{
+    text-decoration: none;
+    color:#333;
+
+}
+
+.page-list li:hover{
+    background:#ffa000;
+    color:#fff;
+}
+
+
+.page-list li a:hover{
+    color:#fff;
+}
+
+.page-list li:nth-child(8):hover{
+    background-color: #fff;
+    color:#333;
+    cursor: none;
+  
+}

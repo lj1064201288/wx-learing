@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒子flex</title>
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        h1,
+        p {
+            margin: 0;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .news {
+            margin: 10px;
+        }
+        .news li {
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+            border-top-left-radius: 20px;
+            overflow: hidden;
+
+            display: flex;
+            /* 子盒子的浮动不起作用，子盒子行级变成行内 */
+
+            /* 水平 贴边分布 */
+            justify-content: space-between;
+
+            /* 垂直  */
+            align-items: center;
+
+            /**/
+            align-items: stretch;
+
+            /* 换行 */
+            /* flex-wrap: wrap */
+
+        }
+
+        .news li img {
+            /* width: 120px; */
+            height: 120px;
+            object-fit: cover;
+            /* border-top-left-radius: 20px; */
+
+            /* float: left; */
+
+            /* 默认不分配剩余空间 */
+            /* flex-grow:0; */
+            flex-shrink: 2;
+        }
+
+        .news-text {
+
+            /* margin-left: 130px; */
+            background: #f1f1f1;
+            padding: 10px;
+            /* margin: 0 10px; */
+            border-bottom: 1px #c00 solid;
+            /* width: 100px;  */
+            /* 写最小宽就不会被压缩 */
+            /* min-width: 100px;   */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            /* 分配剩余板块 */
+            flex-grow: 1;
+            /* flex-shrink:0; */
+
+        }
+        .news-text b {}
+        .news-text p {
+            margin-top: 5px;
+            color: #999;
+            font-size: 12px;
+        }
+
+
+        .news-text span {}
+
+        .news-attr {
+            font-size: 12px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .news li:nth-child(2n) {
+            border-top-right-radius: 20px;
+            flex-direction: row-reverse;
+        }
+        
+        /* .news li:nth-child(2n) img {
+            order: 2;
+        }
+
+        .news li:nth-child(2n) .news-text {
+            order: 1;
+            text-align: right;
+        } */
+
+    </style>
+    <ul class="news">
+        <li><img src="aa.jpg">
+            <div class="news-text">
+                <div>
+                    <b>标题</b>
+                    <p>她已37岁，
+                        为何有很多男神喜欢跟她一起玩，网友：看照片你就懂了儿科医生鲍秀兰
+                    </p>
+                </div>
+                <div class="news-attr">
+                    <div>
+                        <span>日期</span>
+                        <span>阅读数</span>
+                    </div>
+                    <a href="">更多</a>
+                </div>
+            </div>
+
+        </li>
+        <li><img src="aa.jpg">
+            <div class="news-text">
+                <div>
+                    <b>标题</b>
+                    <p>她已37岁，
+                        为何有很多男神喜欢跟她一起玩，网友：看照片你就懂了儿科医生鲍秀兰
+                    </p>
+                </div>
+                <div class="news-attr">
+                    <div>
+                        <span>日期</span>
+                        <span>阅读数</span>
+                    </div>
+                    <a href="">更多</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>

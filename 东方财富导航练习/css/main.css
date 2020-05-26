@@ -1,0 +1,134 @@
+
+.dfch-nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+.side-nav {
+    position: relative;
+    margin-top: 20px;
+    width: 254px;
+    border: 1px solid #f90;
+}
+.nav-tit {
+    position: relative;
+    display: inline-block;
+    width: 244px;
+    height: 30px;
+    left: 5px;
+    top: 5px;
+    margin-bottom: 2px;
+    vertical-align: -5px;
+    background-image: url(../images/index.png);
+    background-position: -91px -216px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+.nav-tit p {
+    top: -5px;
+    left: -8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+.nav-main {
+    width: 100%;
+    margin-top: 5px;
+}
+.cls-list {
+    position: relative;
+}
+.cls-list li {
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    background: #fff;
+    /* box-sizing: border-box; */
+}
+
+.cls-list li:hover {
+    width: 244px;
+    border-top: 2px solid #f70;
+    border-bottom: 2px solid #f70;
+    border-left: 1px solid #f70;
+    border-right: 2px solid #fff;
+}
+.cls-list li:hover>span {
+    display: none;
+}
+.side-nav-main {
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.cls-list .side-nav-main:hover::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    top: 1px;
+    border-left: 2px solid red;
+}
+.cls-list li:hover .item-child {
+    display: block;
+}
+.item-tit {
+    float: left;
+    color: #3f3f3f;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.item-list {
+    float: left;
+}
+.item-list a {
+    float: left;
+    margin-left: 8px;
+    font-size: 12px;
+}
+.iconxiangyou {
+    float: right;
+    color: #f80;
+    font-weight: 700;
+}
+.item-child {
+    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: 2px solid #f70;
+    display: none;
+}
+
+.item-child-tit {
+    padding-left: 10px;
+    float: left;
+    color: #3f3f3f;
+    font-size: 12px;
+    font-weight: 700;
+    width: 70px;
+}
+td .iconxiangyou {
+    color: #3f3f3f;
+    font-weight: 100;
+}
+.item-child-cls {
+    word-break: keep-all;
+    width: 820px;
+}
+.item-child-cls a {
+    color: #003398;
+    line-height: 12px;
+    font-size: 12px;
+    margin: 11px 18px 11px 0;
+}
+.last-more {
+    position: relative;
+    float: right;
+    padding: 3px;
+    top: -8px;
+    background: #e4e4e4;
+}

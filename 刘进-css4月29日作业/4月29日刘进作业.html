@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜鸟教程</title>
+    <style>
+        body, html, ul, li, p, h1, h2, h3, h4, h5 {
+            margin: 0;
+        }
+        body {
+            background: #f6f6f6;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .top {
+            width: 100%;
+            margin-top: 30px;
+            height: 80px;
+        }
+        .top .left {
+            float: left;
+        }
+        .right {
+            float: right;
+            margin-top: -10px;
+        }
+        .content::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .content {
+             width: 100%;
+        }
+        .nav {
+            background: #96b97d;
+            width: 100%;
+            margin-bottom: 25px; 
+        }
+        .nav ul {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .side-bar {
+            height: 600px;
+            float: left;
+            margin-right: 10px; 
+        }
+        .tab {
+            color: grey;
+            opacity: .7;
+            padding-left: 4px;
+            font-weight: 400;
+            display: block;
+            font-size: 16px;
+            margin-left: 4  0px;
+        }
+        .menu {
+            border: 3px white solid;
+            width: 150px;
+        }
+        
+        .menu a {
+            color: #000;
+            font-size: 12px;
+            line-height: 10px;
+        }
+
+        .main {
+            float: left;
+            width: 860;
+        }
+
+        .side-right {
+            float: right;
+            width: 150px;
+            height: 500px;
+        }
+
+        .side-nav {
+            margin-left: 75px;
+        }
+
+        .side-nav a{
+            font-weight: 700;
+            color: #000;
+            font-size: 12px;
+        }
+        .footer{
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .footer{
+            margin-left: 325px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="left">
+                <img src="images/runoob.png" alt="" width="330px" height="45px">
+            </div>
+            <div class="right">
+                <img src="images/search.png" alt="" width="576px" height="60px">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="nav">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JAVASCRIPT</a></li>
+                <li><a href="">JQUERY</a></li>
+                <li><a href="">BOOTSTRAP</a></li>
+                <li><a href="">PYTHON3</a></li>
+                <li><a href="">PYTHON2</a></li>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">C</a></li>
+                <li><a href="">C++</a></li>
+                <li><a href="">C#</a></li>
+                <li><a href="">SQL</a></li>
+                <li><a href="">MYSQL</a></li>
+                <li><a href="">PHP</a></li>
+                <li><a href="">本地书签</a></li>
+                <li><a href="">云服务器</a></li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <div class="side-bar">
+                <div class="tab">
+                    CSS 教程
+                </div>
+                <ul class="menu">
+                    <li><a href="">CSS 教程</a></li>
+                    <li><a href="">CSS 简介</a></li>
+                    <li><a href="">CSS 语法</a></li>
+                    <li><a href="">CSS Id 和 Class选择器</a></li>
+                    <li><a href="">CSS 创建</a></li>
+                    <li><a href="">CSS Backgrounds(背景)</a></li>
+                    <li><a href="">CSS Text(文本)</a></li>
+                    <li><a href="">CSS Fonts(字体)</a></li>
+                    <li><a href="">CSS 链接(link)</a></li>
+                    <li><a href="">CSS 列表样式(ul)</a></li>
+                    <li><a href="">CSS 列表样式(ul)</a></li>
+                    <li><a href="">CSS Table(表格)</a></li>
+                    <li><a href="">CSS 盒子模型</a></li>
+                    <li><a href="">CSS Border(边框)</a></li>
+                    <li><a href="">CSS 轮廓（outline）属性</a></li>
+                    <li><a href="">CSS margin(外边距)</a></li>
+                    <li><a href="">CSS padding（填充）</a></li>
+                    <li><a href="">CSS 分组和嵌套</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <img src="images/main.png" alt="" width="864" height="560px">
+            </div>
+            <div class="side-right">
+                <div class="side-nav-top">
+                    <img src="images/fldh.png" alt="">
+                </div>
+                <ul class="side-nav">
+                    <li><a href="">HTML / CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">服务端</a></li>
+                    <li><a href="">数据库</a></li>
+                    <li><a href="">移动端</a></li>
+                    <li><a href="">XML 教程</a></li>
+                    <li><a href="">ASP.NET</a></li>
+                    <li><a href="">Web Service</a></li>
+                    <li><a href="">开发工具</a></li>
+                    <li><a href="">网站建设</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-img">
+            <img src= "images/footer.png" alt="" width="864">
+        </div>
+        
+    </div>
+        
+</body>
+</html>

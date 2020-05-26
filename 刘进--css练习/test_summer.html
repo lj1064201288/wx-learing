@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #666;
+            position: relative;
+        }
+        .box-btn{
+            display: inline-block;
+            width: 50px;
+            margin: 10px;
+            padding: 5px;
+            border: 1px orangered solid;
+            background-color: orangered;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .box-btn:before{
+            display: inline-block;
+            content: "";
+            width: 0;
+            height: 0;
+            border: 5px transparent solid;
+            border-left: 5px orangered solid;
+            position: absolute;
+            top: auto;
+            /*左移内容的宽度加伤害内外边距在加上边框的大小到达右边*/
+            left: 70px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="box-btn">按钮</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+</head>
+<body>
+
+    <style>
+        .box1 {
+            background: #f60;
+            width: 200px;
+            margin: 0 auto;
+            /* BFC解决方案：Block Formating Context */
+            /* 父盒子浮动 */
+            /* float: left; */
+            /* overflow: hidden; */
+            /* display: inline-block; */
+            /* position: absolute; */
+        }
+
+        .box2 {
+            background: rgba(50,50,0,.5);
+            float: left;
+        }
+        .box3 {
+            /* background: pink; */
+            float: right;
+            margin-left: -20px;
+        }
+        /* 
+         * 浮动元素不参与父盒子高度计算
+         */
+        .box4 {
+            /* float: left; */
+            /* clear: left; */
+        }
+
+        .clearfixed::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+
+    <div class="box1 clearfixed">
+        <div class="box2">box2box2box2box2box2box2</div>
+        <div class="box3">box3box3box3box3box3box3box3box3b ox3box3box3box3box3box3 box3box3box3box 3box3box3</div>
+        
+        <!-- <div class="box4">box4</div> -->
+    </div>
+    <div class="clearfixed"></div>
+    博学博学博学博学博学博学博学博学博学博学博学博学博学博学
+</body>
+</html>

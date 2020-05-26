@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询</title>
+</head>
+
+<body>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .wrap {
+            /* max-width: 680px; */
+            margin: 0 auto;
+        }
+
+        .box {
+            background: #f00;
+        }
+
+        .news {}
+
+        .news li {
+            width: 25%;
+            float: left;
+
+        }
+
+
+        @media screen and (max-width: 1200px) {
+
+            /* .wrap {
+                width: auto;
+                margin: 0 10px;
+            } */
+
+            .news li {
+                width: 33.33333%;
+                font-size: 20px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .news li {
+                width: 50%;
+                font-size: 24px;
+            }
+
+        }
+
+        @media screen and (max-width: 375px) {
+
+            .news li {
+                width: 50%;
+                font-size: 24px;
+            }
+
+        }
+    </style>
+    <div class="wrap">
+        <div class="box">box</div>
+
+        <ul class="news">
+            <li>标题1</li>
+            <li>标题2</li>
+            <li>标题3</li>
+            <li>标题4</li>
+            <li>标题5</li>
+            <li>标题6</li>
+            <li>标题7</li>
+            <li>标题8</li>
+        </ul>
+    </div>
+</body>
+
+</html>

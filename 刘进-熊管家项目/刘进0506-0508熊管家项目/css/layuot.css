@@ -1,0 +1,12 @@
+.layear {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.server-img-list .layear {
+    margin: 0;
+    position: relative;
+    margin-right: 10px;
+}
+

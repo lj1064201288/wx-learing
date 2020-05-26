@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px #f00 solid;
+            background: #f1f1f1;
+
+
+            /* overflow: hidden; */
+        }
+
+        .news {}
+
+        .news li {
+            /* width: 100%;
+            float: left; */
+            overflow: hidden;
+        }
+
+        .news li img {
+            width: 180px;
+            height: 120px;
+            float: left;
+        }
+
+        .news li p {
+            padding: 10px 0;
+            margin-left: 200px;
+            background: #f1f1f1;
+        }
+
+        .news li:nth-child(2n) img {
+            float: right;
+        }
+
+        .news li:nth-child(2n) p {
+            padding-left: 20px;
+            margin-left: auto;
+            margin-right: 200px;
+        }
+
+        .news li:hover p {
+            color: #f00;
+        }
+    </style>
+    <ul class="news">
+        <li><img src="">
+            <p>文20-04刘进/列表练习/20-04刘进/列表练习/本</p>
+        </li>
+        <li><img src="">
+            <p>文20-04刘进/列表练习/20-04刘进/列表练习/本</p>
+        </li>
+        <li><img src="">
+            <p>文20-04刘进/列表练习/20-04刘进/列表练习/本</p>
+        </li>
+        <li><img src="">
+            <p>文20-04刘进/列表练习/20-04刘进/列表练习/本</p>
+        </li>
+        <li><img src="">
+            <p>文20-04刘进/列表练习/20-04刘进/列表练习/本</p>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS基础</title>
+</head>
+
+<body>
+    <!-- 尺寸 -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .size-box {
+
+            /* 行内元素如何具备宽高 */
+
+            /* 加了浮动 行内元素变成了-> 行内块 */
+            /* float: left; */
+            /* display: inline-block; */
+
+            /* 具备
+               背景色
+             */
+
+            background: #999;
+            font-size: 24px;
+
+            /* width: 300px; */
+            height: 100px;
+
+            /* display: block; */
+
+            /* 写了宽就会变成 标准盒模型 */
+            width: 500px;
+            /* 标准盒模型 */
+            /* box-sizing: content-box; */
+
+            /* 不写宽的块级元素 */
+            /* 怪异盒模型/IE盒模型 */
+            box-sizing: border-box;
+
+            /* 
+             行内元素：盒模型几大要素 上下方向不起作用
+             */
+            /* 上下外边距不起作用 */
+            /* margin: 20px; */
+
+            /* 上下内边距不影响其他元素 */
+            padding: 20px;
+
+            /* 上下边框不影响其他元素位置 */
+            border: 20px #f00 solid;
+
+            line-height: 1;
+        }
+    </style>
+    <div>块级</div>
+    <div class="size-box">
+        size-box内容内容内容box内容<br>内容内容
+    </div>
+    <span>另一个盒子</span>
+    <div>块级</div>
+
+    <style>
+        .min-width {
+            display: inline-block;
+            background: #999;
+
+            /* 至少需要一定空间的时候使用 */
+            /* min-width: 300px; */
+            /* width: 300px; */
+
+            /* 不能超过一定尺寸的时候使用 */
+            /* max-width: 300px; */
+            max-height: 200px;
+
+            /* 滚动条根据内容多少自动出现 */
+            overflow: auto;
+        }
+    </style>
+    <div class="min-width">min-widt
+        min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>min-widt<br>
+        min-widt<br>min-widt<br>min-widt<br>
+    </div>
+    <br>
+    <footer>版权</footer>
+
+    <style>
+        .position-grand {
+
+            border: 1px #f00 solid;
+
+            position: relative;
+
+            /* 占据位置 */
+            /* visibility:hidden; */
+
+            /* 不占据位置 */
+            /* display: none; */
+
+        }
+
+        .position-parent {
+            /* display: inline-block; */
+            width: 300px;
+            height: 200px;
+            background: #060;
+
+            /* position属性 */
+            position: relative;
+            margin-top: 20px;
+            border: 1px #060 solid;
+            /* z-index: 6; */
+
+            /* 文本居中 */
+            text-align: center;
+
+            /* 垂直居中 */
+            /* display: table-cell;
+            vertical-align: middle; */
+            z-index: 3;
+        }
+
+        .position {
+
+            background: rgba(0, 0, 255, 0.8);
+            color: #fff;
+
+            width: 200px;
+            height: 100px;
+
+            /* 默认 position: relative; */
+
+            /* 定位的参考元素是第一个有position的父元素 */
+            /* 如果所有祖级都没有position属性，就以body为参照 */
+
+            /*
+             * 让元素在父盒子内正居中
+             */
+            /* 方法1 */
+            position: absolute;
+            /* top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+            /* margin: auto; */
+
+            /* 方法2 */
+            /* left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -50px; */
+
+            /* 下面这种不能，因为margin纵向百分比的参照不是父级的高 */
+            /* margin-left: 50%; 
+            left: -100px; */
+            /* 纵向的百分比是以父盒子宽度为参照 */
+            /* margin-top: 50%; */
+            /* 父盒子宽300 / 2 = 150 */
+
+            z-index: 4;
+            bottom: 0;
+
+        }
+    </style>
+
+
+    <style>
+        /*
+            z-index 默认0
+            z-index 优先比较外层元素
+            z-index 值越大越在上层
+            z-index 两个相同值的元素，后面的高于前面的元素
+        */
+
+        .postion-par {
+            width: 300px;
+            height: 200px;
+            margin-top: -50px;
+            /* background: #f60; */
+            position: relative;
+            border: 1px #00f solid;
+            z-index: 2;
+
+
+        }
+
+        .postion-re {
+
+            background: #ccc;
+
+            position: relative;
+            /* left、top有作用 */
+            /* right: 0;
+            bottom: 0; */
+            /* 如果父级z-index存在就无法超越 */
+            z-index: 7;
+        }
+    </style>
+    <div class="position-grand">
+        <div class="position-parent">
+
+            <div class="position">position</div>
+
+        </div>
+    </div>
+
+    <div class="postion-par">
+        <div class="postion-re">相对定</div>
+    </div>
+
+    <style>
+        .cursor {
+            cursor: pointer;
+        }
+    </style>
+    <a href="">链接</a>
+    <div class="cursor">我是div</div>
+
+    <style>
+        .float {}
+        .left {
+            width: 100px;
+            height: 80px;
+            border: 1px #ccc solid;
+            /* background: #ccc; */
+            /* display: inline-block; */
+            float: left;
+        }
+        .right {
+            width: 500px;
+            height: 70px;
+            background: #c3c;
+            /* display: inline-block; */
+            float: left;
+        }
+        .nofloat {
+            background: #090;
+        }
+        .box5 {
+            width: 600px;
+            height: 40px;
+            background: #060;
+            float: left;
+        }
+        .right2 {
+            width: 50px;
+            height: 40px;
+            background: #090;
+            float: right;
+        }
+    </style>
+    <div class="float">
+
+        <div class="left">left</div>
+
+        <div class="box5">box5</div>
+
+        <div class="right2">right2</div>
+        
+        <div class="right">right1</div>
+        <div class="nofloat">浮动内容换行后的内容</div>
+    </div>
+    
+    <style>
+       .box {
+           /* width: 100%; */
+           /* float: left; */
+           /* margin-top:-40px; */
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            /* padding-top: 50%; */
+
+       } 
+    </style>
+    <div class="box">box</div>
+    <div style="height: 100px;"></div>
+
+    <style>
+        .news {
+            margin: 10px;
+            border: 1px #f00 solid;
+            border-width: 10px 10px 2px 0px;
+            border-color: #f00 #00f #090 transparent;
+            /* font-weight:lighter; */
+        }
+        .news li {
+            /* border-bottom: 1px #f00 dashed; */
+
+            
+        }
+    </style>
+    <ul class="news">
+        <li>内内容跟标题</li>
+        <li>内内容跟标题</li>
+        <li>内内容跟标题</li>
+        <li>内内容跟标题</li>
+    </ul>
+
+    <style>
+        .border{
+            border: 50px #f00 solid;
+            border-color: transparent #00f transparent transparent;
+            border-right-width: 20px;
+            border-top-width: 20px;
+            /* border-left: none; */
+            width: 0px;
+            /* background: #ccc; */
+            height: 0px;
+            /* height: 30px; */
+        }
+    </style>
+    <div class="border"></div>
+
+    <style>
+        .radius, .radius2, .radius3, .radius4, .radius5, .radius6 {
+            margin: 20px;
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            background: #f60;
+            color: #fff;
+            text-align: center;
+            display: inline-block; 
+        }
+        .radius2 {
+            border-radius: 5px;
+        }
+        .radius3 {
+            border-radius: 18px;
+            background: #fff;
+            color: #666;
+            margin: 0;
+            border: 1px rgba(200,200,200,.2) solid;
+            /* 不占位置 */
+            /* outline: 10px #f0f solid; */
+            box-shadow: 0 -10px 36px rgba(0,0,0,.2) inset;
+        }
+        .radius4 {
+            border-radius: 50%;
+        }
+        .radius5 {
+            border-top-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+        }
+        .radius6 {
+            /* border-top-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            border-top-right-radius: 18px; */
+
+            border-radius: 18px;
+            border-bottom-left-radius: 0;
+        }
+        .radius3-box {
+            display: inline-block;
+            border-radius: 18px;
+            box-shadow:  0 10px 36px rgba(0,0,0,.2) ;
+        }
+    </style>
+    <div class="radius">按钮</div>
+    <div class="radius2">按钮</div>
+    <div class="radius3-box" >
+        <div class="radius3">按钮</div>
+    </div>
+    <div class="radius4">按钮</div>
+    <div class="radius5">按钮</div>
+    <div class="radius6">按钮</div>
+
+    <style>
+        .circle {
+            width: 150px;
+            height: 100px;
+            background: #f60;
+            border-radius: 50%;
+        }
+    </style>
+    <div class="circle"></div>
+    <div style="height: 300px;"></div>
+
+</body>
+
+</html>

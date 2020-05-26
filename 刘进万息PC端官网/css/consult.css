@@ -1,0 +1,143 @@
+.banner {
+    background: rgba(0, 0, 0, .2);
+}
+
+.blacklayer{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 718px;
+    background-color:rgba(0,0,0,0.7);
+    z-index:-2;
+}
+.consult-bg {
+    padding-bottom: 70px;
+}
+.consult-bg img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:718px;
+    min-width:800px;
+    z-index:-9;
+    zoom:1;
+}
+
+.consult{
+    position: relative;
+    z-index: 5;
+    max-width:800px ;
+    margin:0 auto;   
+}
+
+.consult h1{
+    font-size:36px;
+    font-weight:normal;
+    color:#fff;
+    margin-top:100px;
+    text-align: center;
+}
+
+.consult h4{
+    margin:20px 0;
+    font-size:16px;
+    font-weight:normal;
+    text-align: center;
+    color:#fff; 
+}
+
+.consult{
+    text-align: right;
+}
+
+.consult li{
+    margin:30px 50px;
+    color:#fff; 
+    font-size: 14px;
+    line-height: 18px;
+}
+.consult li:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.consult li span{
+    color:rgb(255,0,0);
+}
+
+.consult li input{
+    width:540px;
+    height:40px;
+    padding-left:10px;
+    margin:0 20px;
+    color:#cccccc;
+    border:1px #fff solid;
+    background-color: transparent;
+}
+
+.consult li input::-webkit-input-placeholder{
+    color:#cccccc;
+}
+
+.consult li textarea{
+    width:540px;
+    height:120px;
+    padding-left:10px;
+    padding-top:10px;
+    margin:0 20px;
+    color:#cccccc;
+    vertical-align: text-top;
+    resize: none;
+    border:1px #fff solid;
+    background-color: transparent;
+    position: relative;
+  
+}
+.words-in{
+  position: relative;
+  top:-20px;
+  left:-40px;
+  color:#999;
+
+}
+.consult li textarea::-webkit-input-placeholder{
+    color:#cccccc;
+}
+.infor-submit{
+    
+    margin:0 auto;
+    width:160px;
+    height:40px;
+    background-color:  #ff6600;
+    text-align:center;
+    font-size: 16px;
+    line-height:36px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.infor-submit a {
+    text-decoration: none;
+    color:#fff;
+    letter-spacing: 1px;
+}
+
+.infor-submit:hover{
+    background-color: #ffa000;
+
+}
+.last-li {
+    position: relative;
+}
+.last-li p {
+    position: absolute;
+    right: 28px;
+    top: 70%;
+}
+
+
+
+
+
+
+
+

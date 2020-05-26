@@ -1,0 +1,513 @@
+#word{
+    color: red;
+}
+#rgb1{
+    color: rgb(211, 112, 121);
+}
+#rgb2{
+    color: rgb(25%, 67%, 85%);
+}
+#six{
+    color: #00CC00;
+}
+#height{
+    line-height: 1.8;
+}
+#price{
+    font-size: 24px;
+    color: red;
+}
+#delete{
+    text-decoration: line-through;
+}
+.sc{
+    text-indent: 2em;
+}
+#lower{
+    text-transform: lowercase;
+}
+#upper{
+    text-transform: uppercase;
+}
+#title{
+    text-transform: capitalize;
+}
+img.top{
+    width: 200px;
+    height: 100px;
+    vertical-align: text-top;
+}
+img.buttom{
+    width: 200px;
+    height: 100px;
+    vertical-align: text-bottom;
+}
+.hw{
+    text-transform: capitalize;
+    word-spacing: 2em;
+}
+.disperse{
+    text-align:justify;
+    text-justify:inter-word;
+}
+.box{
+    white-space: nowrap;
+    width:300px;
+    overflow:hidden;
+    border:1px solid #000000;
+    text-overflow: ellipsis;
+}
+.wb{
+    width: 300px;
+    background-color: #4cae4c;
+    word-break: break-all;
+    border: 1px solid black;
+}
+.ww{
+    width: 300px;
+    background-color: orange;
+    word-wrap: break-word;
+    border: 1px solid black;
+}
+.box1 img{
+    width:200px ;
+    max-height: 100px;
+}
+.content{
+    width: 800px;
+    border: solid 1px black;
+}
+.content img{
+    max-width: 800px;
+}
+.hv p:hover{
+    display: block;
+    max-width: 800px;
+    cursor: move;
+}
+.one{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 2px;
+}
+.two{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 2px 5px;
+}
+.three{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    margin: 2px 3px 4px;
+}
+.four{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin: 1px 2px 3px 4px;
+}
+.mb{
+    width: 200px;
+    height: 200px;
+    background: green;
+    margin-bottom: 10%;
+    word-wrap: break-word;
+}
+.parent{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 1px black dashed;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin-bottom: 10px;
+}
+.brother{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: green;
+}
+.younger{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: blue;
+}
+.first{
+    height: 50px;
+    background-color: green;
+}
+.cen{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.last{
+    height: 50px;
+    background-color: cyan;
+}
+.parent1{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    overflow: hidden;
+}
+.child1{
+    width: 200px;
+    height: 100px;
+    background-color: cyan;
+    margin: 100px 150px;
+}
+.parent2{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: red;
+}
+.child2{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: blue;
+}
+.child3{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+    background-color: green;
+}
+.flex1{
+    width: 500px;
+    height: 300px;
+    background-color: green;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+}
+.eight{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    background: #00AA88;
+}
+.item0{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+}
+.item1{
+    border-top-color: #0E0E6D;
+    position: absolute;
+    top: 200px;
+}
+.item2{
+    border-top-color: #00b3ee;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.item3{
+    border-bottom-color: yellow;
+    position: absolute;
+    top: -100px;
+
+}
+.item4{
+    border-bottom-color: yellowgreen;
+    position: absolute;
+    top: -100px;
+    left: 100px;
+}
+.item5{
+    border-right-color: blue;
+    position: absolute;
+    left: -100px;
+}
+.item6{
+    border-right-color: purple;
+    position: absolute;
+    left: -100px;
+    top: 100px;
+}
+.item7{
+    border-left-color: aqua;
+    position: absolute;
+    left: 200px;
+}
+.item8{
+    border-left-color: purple;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+.list{
+    list-style: none;
+}
+.list-1:hover{
+    outline:green dotted 4px;;
+}
+.big-box{
+    width: 100px;
+    height: 25px;
+    background: green;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main0{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    box-shadow: 5px 5px 10px #888888;
+}
+.son1{
+    width: 350px;
+    height: 350px;
+    background-color: yellow;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: 5px -5px 10px #888888;
+}
+.son2 {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: -5px 5px 10px #888888;
+}
+.son3 {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: -5px -5px 10px #888888;
+}
+.son4 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: 5px 0 10px #888888;
+}
+.son5 {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: -5px 0 10px #888888;
+}
+.son6 {
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: 0 5px 10px #888888;
+}
+.son7 {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    box-shadow: 0 -5px 10px #888888;
+}
+.tier1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    box-shadow: 5px 5px 10px #888888,5px -5px 10px #888888,-5px 5px 10px #888888,-5px -5px 10px #888888;
+}
+.tier2{
+    width: 176px;
+    height: 176px;
+    background-color: yellow;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    box-shadow: 5px 0 10px #888888;
+}
+.tier3{
+    width: 152px;
+    height: 152px;
+    background-color: blue;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    box-shadow: -5px 0 10px #888888;
+}
+.tier4{
+    width: 128px;
+    height: 128px;
+    background-color: green;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    box-shadow: 0 5px 10px #888888;
+}
+.tier5{
+    width: 104px;
+    height: 104px;
+    background-color: orange;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    box-shadow: 0 -5px 10px #888888;
+}
+#qqlt{
+    width: 400px;
+    height: 300px;
+    background-image: url("../images/car.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rebeccapurple;
+    overflow: scroll;
+    color: white;
+}
+.parent3{
+    width: 400px;
+    height: 400px;
+    background-image: url('../images/lou3.jpg');
+    overflow: hidden;
+}
+.child4{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    background-color: rgba(0, 255, 0, 0.5)
+}
+
+.box2{
+    width: 50px;
+    background-color: cyan;
+}
+
+.box2 div{
+    width: 40px; 
+    height: 40px; 
+    background-repeat: no-repeat;
+    background-image: url("../images/browser.gif");
+    margin: 3px 0;
+}
+
+.chrome{
+    background-position: left 0px;; 
+}
+.firefox{
+    background-position: left -100px;; 
+}
+.edge{
+    background-position: left -50px;
+}
+.opera{
+    background-position: left -150px;
+}
+.safari{
+    background-position: left -202px;
+}
+.container{
+    width: 400px;
+    height: 30px;
+    background:#000000;
+    border: 20px solid black;
+}
+.cbox{
+    width:50%;
+    box-sizing: content-box;
+    border: 20px solid red;
+    color: purple;
+   
+}
+.hr{
+    height: 150px;
+}
+.fp{
+    font-size: 24px;
+}
+.xx-small{
+    font-size: xx-small;
+}
+.x-small{
+    font-size: x-small;
+}
+.small{
+    font-size: small;
+}
+.medium{
+    font-size: medium;
+}
+.xx-large{
+    font-size: xx-large;
+}
+.x-large{
+    font-size: x-large;
+}
+.large{
+    font-size: large;
+}
+.fv{
+    font-variant:small-caps;
+    text-transform: capitalize
+}
+.fw{
+    font-weight: lighter;
+}
+.cs{
+    counter-reset: cate;
+}
+.cs p:before{
+    counter-increment: cate;
+    content: "目录" counter(cate) ". ";
+}
+.o1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    opacity: 0.4;
+}
+.o2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-left: 50px;
+    position: relative;
+    opacity: 0.7;
+}
+.o3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: 50px;
+    opacity: 1;
+}

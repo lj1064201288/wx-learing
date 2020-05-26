@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.clearfix::after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+/* 版心 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 公共标题 */
+.all{
+    width: 565px;
+    margin: 80px auto 50px auto;
+    text-align: center;
+}
+.allTop{
+    font-size: 40px;
+    color: #333;
+    position: relative;
+}
+.allTop::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 0;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid #ff9900 ;
+}
+.allCenter{
+    font-size: 10px;
+    color: #999999;
+    line-height: 28px;
+}
+.allBottom{
+    font-size: 14px;
+    color: #666666;
+    line-height: 21px;
+}
+
+/* 专注开发 */
+.exploitAll{
+    width: 1200px;
+    margin: 0 auto;
+}
+.exploit{
+    display: flex;
+    justify-content: space-around;
+}
+.exploitBox{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ff9900;
+    border-radius: 5px;
+    padding-top: 60px;
+    color: #fff;
+    position: relative;
+} 
+.exploitBox::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50% ;
+    background-color: rgba(255,255,255,.5);
+    position: absolute;
+    top: -60px;
+    right: -60px;
+}
+.exploitBoxNum{
+    font-size: 80px;
+}
+.exploitBoxNum sup{
+    font-size: 40px;
+}
+.exploitBoxSub{
+    font-size: 36px;
+}
+.exploitBoxBar{
+    width: 215px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 30px;
+}
+.exploitBox.box2{
+    background-color: #ff6666;
+}
+.exploitBox.box3{
+    background-color: #cccc00;
+}
+.exploitBox.box4{
+    background-color: #3366cc;
+}
+/* 三大核心产品*/
+.proAll{
+    width: 1200px;
+    margin: 0 auto; 
+}
+.all.allPro{
+    margin: 130px auto 50px auto;
+}
+.pro{
+    display: flex;
+    justify-content: space-around;
+}
+.proBox1,.proBox2{
+    width: 380px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    background-image: url(../images/index/indexProApp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+.proBox1 .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0,0,0,.4);
+}
+.proBox1 .boxWhite{
+    background-color: rgba(0,0,0,0);;
+}
+.proBoxApp{
+    z-index: 9;
+    width: 100px;
+    height: 100px;
+}
+.proBoxApp img{
+    width: 100%;
+    height: 100%;
+}
+.proBoxString{
+    z-index: 9;
+    display: block;
+    width: 80px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.proBoxText{
+    z-index: 9;
+    font-size: 30px;
+    color: #fff;
+}
+.proBox1.box2{
+    background-image: url(../images/index/indexProXcx.jpg);
+}
+.proBox1.box2 .proBoxString{
+    background-color: transparent;
+}
+.proBox1.box3{
+    background-image: url(../images/index/indexProWeb.jpg);
+}
+
+/* 三大核心产品hover*/
+.proNone{
+    display: none;
+}
+.proBox2{
+    background-image: none;
+    background-color: #ff9900;
+    padding: 0 65px;
+    box-sizing: border-box;
+}
+.proBox2 .proBoxCen{
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+}
+.proBoxBtn{
+    display: inline-block;
+    font-size: 20px;
+    color: #ff9900;
+    padding: 10px 35px;
+    background-color: #fff;
+    z-index: 9;
+    border-radius: 50px;
+}
+.pro li:hover .proBlock{
+    display: none;
+}
+.pro li:hover .proNone{
+    display: block;
+}
+
+/* 颠覆传统 创造与众不同 */
+.imparity{
+    width: 100%;
+    height: 722px;
+    margin-top: 130px;
+    position: relative;
+}
+.imparityBanner{
+    width: 100%;
+    height: 400px;
+    padding-top: 95px;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url(../images/index/imparityBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.imparityBannerBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:  rgba(0,0,0,.2);
+}
+.imparityBannerBig{
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    z-index: 9;
+}
+.imparityBannerSmall{
+    font-size: 20px;
+    color: #fff;
+    z-index: 9;
+}
+.imparityList{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.imparityListBox{
+    width: 380px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ececec;
+}
+.imparityListTop{
+    padding-top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #fff;
+}
+.imparityListTop img{
+    width: 52px;
+    height: 59px;
+}
+.imparityListTopBig{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffa100;
+}
+.imparityListTopSmall{
+    margin-top: 17px;
+    font-size: 14px;
+    color: #ffa100;
+}
+.imparityListBottom{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #f5f5f5;
+    position: relative;
+    padding-top: 105px;
+    box-sizing: border-box;
+}
+.imparityListVS{
+    font-size: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #bbbbbb;
+    box-shadow: 0 0 5px #e6e6e6;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -30px;
+    transform: translate(-50% -50%);
+}
+.imparityListBottomBig{
+    font-weight: bold;
+    font-size: 24px;
+    color: #666666;
+}
+.imparityListBottomSmall{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+.imparityListBox:hover .imparityListTop img{
+    opacity: 0;
+}
+.imparityListBox:hover .imparityListTop{
+    background-color: #ff9900;
+}
+.imparityListBox:hover .imparityListTop p{
+    color: #fff;
+}
+/* 案例展示 */
+.show{
+    width: 1200px;
+    margin: 0 auto;
+}
+.showList{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+.showList li{
+    width: 320px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #ccc;
+}
+.showListImg{
+    width: 100%;
+    height: 350px;
+    background-color: turquoise;
+}
+.showListImg img{
+    width: 100%;
+    height: 100%;
+}
+.showListBottom{
+    width: 100%;
+    height: 170px;
+    text-align: center;
+}
+.showListBottom p{
+    padding: 30px 0;
+}
+.showListBottom p a{
+    color: #333333;
+}
+.showListBottom p a:hover{
+    color: #ffa100;
+}
+.showListBottomOne{
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    border-bottom: 1px solid #e5e5e5;
+}
+.showListBottomTow{
+    font-size: 16px;
+    line-height: 28px;
+    color: #333333;
+}
+/* 提交您的需求 */
+.desired{
+    margin-top: 80px;
+    overflow: hidden;
+    width: 100%;
+    height: 490px;
+    background-image: url(../images/index/desiredBanner.jpg);
+}
+.all.allDesired{
+    margin-top: 45px;
+}
+.all.allDesired .allCenter{
+    color: #666;
+}
+.desiredTable{
+    width: 500px;
+    margin: 0 auto;
+}
+.desiredTable tr:first-of-type td{
+    padding-top: 0;
+}
+.desiredTable tr td{
+    padding-top: 30px;
+}
+.desiredTable input{
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    outline:none
+}
+.desiredTable input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ccc;
+}
+.desiredTable input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+.desiredTable input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+.desiredTable input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ccc;
+}
+.desiredTable [type=submit]{
+    width: 104%;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 20px #000;
+    background-color: #ff9900;
+    cursor: pointer;
+}
+.desiredTable [type=submit]:hover{
+    background-color: #5bad7d;
+}
+/* 建站流程 */
+.flow{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flowList{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+.flowList img{
+    width: 60px;
+    height: 60px;
+}
+.flowList .dayu{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    color: #ccc;
+    font-size: 50px;
+}
+.flowList p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    margin-top: 20px;
+}
+/* 万息动态 */
+.state{
+    width: 100%;
+    margin-top: 75px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.all.allState{
+    margin-bottom: 0;
+}
+.stateList{
+    width: 1200px;
+}
+.stateList li{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.stateList li:first-of-type{
+    margin-top: 0;
+}
+.stateListLift{
+    float: left;
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+}
+.stateListLift img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.stateListMain{
+    margin-left: 220px;
+    margin-top: 35px;
+    border-bottom: 1px dashed #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+}
+.stateListMainLeft{
+    width: 685px;
+}
+.stateListMainLeftTatle{
+    padding-bottom: 15px;
+    line-height: 28px;
+}
+.stateListMainLeftTatle a{
+    color: #333333;
+}
+.stateListMainLeftTatle a:hover{
+    color: #ffa100;
+}
+.stateListMainLeftText{
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-bottom: 35px;
+}
+.stateListMainRightTime{
+    font-size: 12px;
+    color: #666666;
+    padding: 50px 0;
+}
+.stateListMainRightDetails{
+    float: right;
+}
+.stateListMainRightDetails a{
+    color: #666666;
+}
+.stateListMainRightDetails a:hover{
+    color: #ffa100;
+}
+/* 返回顶部 */
+.goTop{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.goTop img{
+    width: 41px;
+    height: 41px;
+    margin-top: 15px;
+    float: right;
+    cursor: pointer;
+}

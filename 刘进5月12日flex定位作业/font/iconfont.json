@@ -1,0 +1,23 @@
+{
+  "id": "1814917",
+  "name": "wx",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "714450",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "12816560",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    }
+  ]
+}

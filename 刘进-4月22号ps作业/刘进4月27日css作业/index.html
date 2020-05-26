@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品</title>
+    <style>
+        html, h1, h2, h3, h4, h5, h6, p, ul, li{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        .product-list li{
+            display: inline-block;
+        }
+        div{
+            display: inline-block;
+        }
+        .product{
+           background-color: #eee;
+           margin: 0 10px;
+        }
+        img{
+            float: left;
+            vertical-align: text-top;
+            margin: 8px;
+            padding: 5px;
+        }
+        .pro-content{
+            width: 200px;
+            display: inline-block;
+        }
+        .pro-tit{
+            font-weight: bold;
+            background-color: #ddd;
+            padding: 5px 5px;
+            width: 187px;
+            border-radius: 5px;
+            letter-spacing: 0.075em;
+        }
+        .price{
+            height: 40px;
+            font-size: 12px;
+            margin-top: 5px;
+            width: 187px;
+            background-color: #ddd;
+            padding: 5px 5px;
+            border-radius: 5px;
+        }
+        .price em{
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .price span{
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .pro-sale{
+            background-color: #ddd;
+            padding: 5px 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .pro-sale span{
+            color: red;
+            font-weight:bold; 
+        }
+        .pro-num{
+            background-color: #ddd;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .num{
+            width: 18px;
+        }
+        .pro-inv{
+            text-indent: 2em;
+            font-size: 10px;
+            letter-spacing: 0.3em
+        }
+        .pro-inv+span{
+            font-size: 14px;
+            color: red;
+            font-weight: bold;
+        }
+        .pro-buy{
+            background-color: #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .buy-imm-btn{
+            padding: 5px;
+            background-color: red;
+            border-radius: 5px;
+            color:#fff;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+        .shop-cart{
+            padding: 5px;
+            background-color: red;
+            border-radius: 5px;
+            color:#fff;
+            cursor: pointer;
+        }
+        .buy-imm-btn:hover{
+            background-color: green;
+            border: 1px solid black;
+        }
+        .shop-cart:hover{
+            background-color: orange;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="product-list">
+        <li>
+            <div class="product">
+                    <img src="image/shouji.jpg" alt="" width="120px", height="195px">
+                    <ul class="pro-content">
+                    
+                        <li class="pro-tit">上海中兴守护宝F6S正品</li>
+                        <li class="price">
+                            原价: ¥<em>799.00-1099.00</em>
+                            <br />
+                            促销价:<span>￥388.00-688.00</span>
+                        </li>
+                        <li class="pro-sale">
+                            <small>月销量: </small><span class="m-sale">7000+</span>
+                            <small>评论:</small><span class="com">6000+</span>
+                        </li>
+                        <li class="pro-num">
+                            <input type="button" value="+" class="pro-btn">
+                            <input type="text" value="1" class="num">
+                            <input type="button" value="-" class="pro-btn">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <small class="pro-inv">库存:</small><span>999+</span>
+                        </li>
+                        <li class="pro-buy">
+                            <div class="buy-imm-btn">立即购买</div>
+                            <div class="shop-cart">加入购物车</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product">
+                    <img src="image/yifu.png" alt="" width="120px", height="195px">
+                    <ul class="pro-content">
+                    
+                        <li class="pro-tit">男纯棉宽松衣服帅气</li>
+                        <li class="price">
+                            原价: ¥<em>499.00</em>
+                            <br />
+                            促销价:<span>￥139.00</span>
+                        </li>
+                        <li class="pro-sale">
+                            <small>月销量: </small><span class="m-sale">7000+</span>
+                            <small>评论:</small><span class="com">6000+</span>
+                        </li>
+                        <li class="pro-num">
+                            <input type="button" value="+" class="pro-btn">
+                            <input type="text" value="1" class="num">
+                            <input type="button" value="-" class="pro-btn">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <small class="pro-inv">库存:</small><span>999+</span>
+                        </li>
+                        <li class="pro-buy">
+                            <div class="buy-imm-btn">立即购买</div>
+                            <div class="shop-cart">加入购物车</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product">
+                    <img src="image/lajidai.png" alt="" width="120px", height="195px">
+                    <ul class="pro-content">
+                    
+                        <li class="pro-tit">垃圾袋家用手提式</li>
+                        <li class="price">
+                            原价: ¥<em>21.90</em>
+                            <br />
+                            促销价:<span>￥14.80</span>
+                        </li>
+                        <li class="pro-sale">
+                            <small>月销量: </small><span class="m-sale">7000+</span>
+                            <small>评论:</small><span class="com">6000+</span>
+                        </li>
+                        <li class="pro-num">
+                            <input type="button" value="+" class="pro-btn">
+                            <input type="text" value="1" class="num">
+                            <input type="button" value="-" class="pro-btn">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <small class="pro-inv">库存:</small><span>999+</span>
+                        </li>
+                        <li class="pro-buy">
+                            <div class="buy-imm-btn">立即购买</div>
+                            <div class="shop-cart">加入购物车</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product">
+                    <img src="image/erji.png" alt="" width="120px", height="195px">
+                    <ul class="pro-content">
+                    
+                        <li class="pro-tit">原装正品亮东方耳机</li>
+                        <li class="price">
+                            原价: ¥<em>58.00-88.00</em>
+                            <br />
+                            促销价:<span>￥15.80-25.80</span>
+                        </li>
+                        <li class="pro-sale">
+                            <small>月销量: </small><span class="m-sale">7000+</span>
+                            <small>评论:</small><span class="com">6000+</span>
+                        </li>
+                        <li class="pro-num">
+                            <input type="button" value="+" class="pro-btn">
+                            <input type="text" value="1" class="num">
+                            <input type="button" value="-" class="pro-btn">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <small class="pro-inv">库存:</small><span>999+</span>
+                        </li>
+                        <li class="pro-buy">
+                            <div class="buy-imm-btn">立即购买</div>
+                            <div class="shop-cart">加入购物车</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.layer{
+    position: relative;
+    margin: 0px 30px;
+}
+.transport .layer{
+    margin: 40px 30px;
+}
+.software .layer{
+    margin: 10px 10px;
+}
+.card-list .layer {
+    margin: 0 10px;
+}
+.por-img-list .layer {
+    margin: 10px 12px;
+}
+.wed-list .layer {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.form-list .layer {
+    margin: 20px;
+    margin-bottom: 40px;
+}

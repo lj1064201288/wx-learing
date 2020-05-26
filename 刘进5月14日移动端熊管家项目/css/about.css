@@ -1,0 +1,98 @@
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+}
+.resume-img {
+    display: flex;
+    margin-top: 20px;
+}
+.resume-img img{
+    width: 100%;
+}
+.resume-img img:hover {
+     opacity: .5;
+}
+.resume-text {
+    position: relative;
+    background: #f3f3f3;
+    padding: 0 10px; 
+    padding-bottom: 2em;
+}
+.resume-text p {
+    line-height: 36px;
+    font-size: 24px;
+}
+.resume-all {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #ffffff;
+    padding: 0.2em 0.8em;
+    bottom: 10px;
+    right: 10px;
+    background: #14916a;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.resume-all:hover {
+    color: black;
+    background: cyan;
+}
+.team-img {
+    position: relative;
+    margin-top: 20px; 
+}
+.iconfont.iconxiangzuo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    width: 40px;
+    height: 40px;;
+    top: 40%;
+    left: 3%;
+    background: rgba(20, 145, 106, .8);
+    border-radius: 50%;
+    position: absolute;
+}
+.iconxiangzuo:hover {
+    color: cyan;
+}
+.iconfont.iconxiangyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    width: 40px;
+    height: 40px;;
+    top: 40%;
+    right: 3%;;
+    background: rgba(20, 145, 106, .8);
+    border-radius: 50%;
+    position: absolute;
+}
+.iconxiangyou:hover {
+    color: cyan;
+}
+.team-img img{
+    object-fit: cover;
+    width: 100%;
+}
+.team-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 10px;
+    padding-bottom: 20px;
+}
+.desc-ch {
+    font-size: 28px;
+}
+.desc-en {
+    font-size: 20px;
+    color: #666666;
+}

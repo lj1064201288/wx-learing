@@ -1,0 +1,125 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -14px;
+}
+.qrcode {
+    background: #5ab296;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    padding: 5% 15%;
+}
+.qrcode img {
+   vertical-align: middle;
+}
+
+.qrcode-desc h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
+    margin-top: 0.5em;
+    font-size: 36px;
+    color: #f6f6f6;
+}
+.scan-desc {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #333333;
+}
+.scan-desc a {
+    color: #f6f6f6;
+}
+.scan-desc a:hover {
+    color: #14916a;
+}
+.com-desc {
+    background: #f6f6f6;
+    padding: 20px 10px;
+}
+.com-in {
+    font-size: 24px;
+    line-height: 48px;
+}
+.com-in span {
+    color: #333333;
+    font-weight: 600;
+}
+.off-hours {
+    font-size: 24px;
+    line-height: 48px;
+}
+.contact-fill {
+    display: flex;
+    margin: 40px 0px;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.contact-tit {
+    display: flex;
+    justify-content: center;
+}
+.contact-tit h3 {
+    font-size: 36px;
+    line-height: 35px;
+    color: #333333;
+    font-weight: 500;
+}
+.contact-form {
+    margin: 30px 0;
+    padding: 0 10px;
+}
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+} 
+.contact-form label {
+    font-size: 24px;
+    line-height: 48px;
+}
+.contact-form label span {
+    color: #ff0000;
+}
+.contact-form input {
+    max-width: 545px;
+    height: 70px;
+    flex-grow: 1;
+    margin: 10px 0;
+    margin-left: 5px;
+    font-size: 24px;
+    text-indent: 1em;
+    color: #aaaaaa;
+}
+.contact-form select {
+    max-width: 545px;
+    height: 70px;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin: 10px 0;
+    font-size: 24px;
+    text-indent: 1em;
+    color: #aaaaaa;
+}
+.contact-form a {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    background: #333333;
+    width: 272px;
+    height: 60px;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+}
+.contact-form a:hover {
+    background: #5ab296;
+}
+.map img {
+    width: 100%;
+}

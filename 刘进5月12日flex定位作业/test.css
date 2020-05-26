@@ -1,0 +1,47 @@
+.wrap {
+    display: flex;
+    /* 默认: flex-start:正常排序，如果不设置flex-wrap不会换行，宽度超过会使子元素自动变小
+        flex-end: 所有子盒子靠右，跟浮动不一样,不是先到先得
+        center: 所有子盒子水平居中
+        space-between: 水平平铺左右分布,中间居中
+        space-around: 会自动按照比例在水平方向隔开各个元素
+    */
+    /* justify-content: center ; */
+
+    /*水平排列 默认
+        row-reverse: 反向排列，就是把最后一个放在前面倒序排序
+        column: 垂直排列.
+        colum-reverse: 垂直倒序排列
+    */
+    /* flex-direction:column-reverse ; */
+    
+    /*默认为nowrap 不会进行换行，会减少子元素宽度贴边
+        wrap: 在水平排序时超过宽度换行，与正常文档流相似,不会破坏子元素宽度;
+        wrap-reverse: 反向换行排序
+    */
+    /* flex-wrap:wrap; */
+
+    /*默认flex-start:垂直方向依次排序
+        flex-end:  垂直方向子元素按照父元素底部进行水平排序
+        center: 子元素盒子垂直居中;
+        stretch: 高度铺满,如果有一个子元素设置了高度 或者高度大于其他的所有子元素，那么就会以这个元素的高度铺满
+    */
+    /* align-items:stretch; */
+    align-content:flex-start;
+
+}
+.box1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+.box2 {
+    width: 200px;
+    height: 300px;
+    background: yellow;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+}

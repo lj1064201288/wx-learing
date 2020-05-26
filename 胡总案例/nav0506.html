@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多级导航</title>
+    <!-- <link rel="stylesheet" href="nav0506.css"> -->
+    <style>
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .side-nav {
+            position: relative;
+            width: 300px;
+        }
+
+        .side-nav li {
+            background: #ccc;
+
+            /* height: 100px;
+            padding: 40px;
+            
+            border: 40px #f00 solid; */
+            /* width: 300px; */
+            /* position: relative; */
+            
+        }
+
+        .side-main {
+            position: absolute;
+            left: 300px;
+            top: 0px;
+            /* right: 0; */
+            /* background: rgba(0, 0, 0, .4); */
+            background: #fff;
+            color: #f00;
+            /* height: 100%; */
+            /* width: 100%; */
+            width: 200px;
+            height: 200px;
+            display: none;
+            border: 1px #f00 solid;
+        }
+        .side-nav li .side-nav-title {
+            position: relative;
+            padding: 0 10px;
+
+            line-height: 32px;
+            box-sizing: border-box;
+        }
+        .side-nav li .side-nav-title::after {
+            content: "";
+            width: 1px;
+            background: #fff;
+            display: block;
+            position: absolute;
+            z-index: 9;
+            right: -1px;
+            top:0;
+            height: 100%;
+            display: none;
+        }
+
+        /* 鼠标效果：右侧显示 */
+        .side-nav li:hover .side-main {
+            display: block;
+        }
+        /* 鼠标效果：左侧边框 */
+        .side-nav li:hover .side-nav-title {
+            background: #fff;
+            border: 1px #f00 solid;
+            /* outline: 1px #f00 solid; */
+            line-height: 30px;  
+            padding: 0 9px;          
+        }
+        /* 鼠标效果：左侧边框衔接 */
+        .side-nav li:hover .side-nav-title::after {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul class="side-nav">
+            <li>
+                <div class="side-nav-title">
+                    <a href="">box1</a>/
+                    <a href="">box1</a>/
+                    <a href="">box1</a>
+                </div>
+                <div class="side-main">
+                    <div>
+                        <div>
+                            <div><h2></h2><a href="">更多</a></div>
+                            <p><a href="">标签</a><a href="">标签</a><a href="">标签</a><a href="">标签</a></p>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sidenav-favor">
+                        <h2>猜你喜欢</h2>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="side-nav-title">box2</div>
+                <div class="side-main">定位盒子2</div>
+            </li>
+            <li>
+                <div class="side-nav-title">box4</div>
+                <div class="side-main">定位盒子3</div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

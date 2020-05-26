@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边距叠加</title>
+</head>
+<body>
+    
+    <style>
+
+        /* 
+
+         //纵向叠加
+         1、都为正数：取最大的数
+         2、一正一负：取和
+         3、都为负数：取绝对值最大的数
+
+         //添加浮动后不叠加
+
+         //横向不会叠加
+
+         */
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background: #f60;
+
+            margin-bottom: 10px;
+            /* margin-right: 20px; */
+
+            /* float: left; */
+            /* display: inline-block; */
+
+        }
+
+        .box2 {
+
+            width: 100px;
+            height: 100px;
+            background: #060;
+
+            /* margin-top: 10px; */
+            margin-top: 20px;
+            /* float: left; */
+            clear: left;
+            /* display: inline-block; */
+
+            /* margin-left: 20px; */
+
+        }
+        /* 上下两个板块，尽量只写其中一个板块的垂直方向的边距 */
+    </style>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    
+    <style>
+        .box3 {
+            width: 200px;
+            /* height: 100px; */
+            background: #f60;
+            /* margin-top: 20px; */
+            /* 父子盒子的子盒子，垂直方向尽量不写marin，使用父盒子写padding */
+            padding: 20px;
+            
+        }
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background: #660;
+
+            margin-top: 20px;
+            /* margin-bottom: 20px; */
+
+            /* 浮动元素不会产生边距叠加 */
+            /* float: left; */
+        }
+
+    </style>
+    <div class="box3">
+        <!-- <div style="padding: 1px;"></div> -->
+        <div class="box4">box4</div>
+        <!-- <div style="padding: 1px;"></div> -->
+    </div>
+    
+
+</body>
+</html>

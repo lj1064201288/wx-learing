@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>字体图标</title>
+    <style>
+        html, h1,h2,h3,h4,h5,h6,ul,li,p,img, body{
+            margin: 0;
+        }
+        .root, ul, li{
+            display: inline-block;
+        }
+        .root{
+            width: 100%;
+        }
+        .top {
+            height: 230px;
+            color: #e6e6e6;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            background: #090723;
+            text-align: center;
+        }
+        .logo{
+            width: 125px;
+            height: 55px;
+            text-align: center;
+            float: left;
+            font-size: 24px;
+            margin-left: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f7f7f7;
+        }
+        .iconjiahao{
+            color: red;
+            margin-left: -10px;
+            display: inline-block;
+        }
+        .nav{
+            float: left;
+            line-height: 55px;
+        }
+        .quick-menu{
+            float:right;
+            display: block;
+            margin-right: 300px;
+        }
+        .clearfix{
+            line-height: 55px;
+        }
+        .clearfix li{
+            float: left;
+            position: relative;
+            padding:0 8px;
+            min-width: 25px;
+            min-height: 25px;
+            font-size:14px;
+            color: rgba(255, 255, 255, .5);
+        }
+        .iconmore{
+            display: inline-block;
+            font-size: 30px;
+        }
+        .act::after{
+            content: "";
+            display: inline-block;
+            background-image:url("images/act.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 16px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+        input{
+            display: inline-block;
+            width: 160px;
+            float: right;
+            height: 29px;
+            font-size:12;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, .5);
+            box-sizing: border-box;
+            padding: 0 35px 0 17px;
+            color: #999;
+            margin-top: 12px;
+            margin-left: 40px;
+            background-color: #333;
+        }
+        .iconsearch{
+            position: absolute;
+            top: auto;
+            margin-left: 80px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, .5);
+        }
+        .bulb{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            font-size: 12px;
+        }
+        .bulb img{
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            vertical-align: top;
+            cursor: pointer;
+            border-radius: 12px;
+            margin: 13px 5px 10px 0;
+        }
+        .iconshangchuan-copy, .iconcart-Empty{
+            font-size: 26px;
+        }
+        .iconenglish{
+            font-size:24px;
+        }
+        .top-bottom-left{
+            position: relative;
+            left: 100px;
+            width: 130px;
+            height: 130px;;
+        }
+        .top-img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            left: 10px;
+            top: 100px;
+        }
+        .top-bottom-user{
+            position: absolute;
+            top: 120px;
+            left: 180px;
+            font-size: 22px;
+        }
+        .bar-list{
+            position: relative;
+            left: 130px;
+            top: 100px;
+            width: 300px;
+        }
+        .block-bar-left{
+            width: 100%;
+        }
+        .bar-list li{
+            display: inline-block;
+        }
+        .block-bar-right{
+            position: absolute;
+            width: 300px;
+            right: 270px;
+            top: 205px;
+        }
+        .top-bottom-right{
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+        .top-bottom-right > .iconsearch{
+            position: relative;
+            top: 10px;
+            left: -68px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .iconxinjianwenjian{
+            position: relative;
+            top: 10px;
+            left: auto;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .iconpaixu{
+            position: relative;
+            top: 10px;
+            left: auto;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .paixu{
+            background: #16c2c2;
+        }
+        .wenjian{
+            background: #9266f9;
+        }
+        
+        .content{
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+        .left{
+            float: left;
+            width: 150px;
+            width: 229px;
+        }
+        .jlt{
+            list-style: none;
+        }
+        .jlt li{
+            display: block;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 20px;
+            position: relative;
+            cursor: pointer;
+            padding-left: 10px;
+            color: #999;
+        }
+        .jlt span{
+            width: 30px;
+            height: 23px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .right{
+            position: relative;
+            width: 500px;
+            display: inline-block;
+        }
+       
+        .right-top{
+            line-height: 30px;
+        }
+        .content-title{
+            display: inline-block;
+            margin-right: 20px;
+            white-space: nowrap;
+            font-size: 20px;
+        }
+        .top-left{
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            margin-right: 15px; 
+        }
+        .top-left .num{
+            font-size: 16px;
+            color:red;
+        }
+        .top-left span{
+            margin-right: 3px;
+        }
+        .top-right{
+            position: relative;
+            float: right;
+            font-size: 12px;
+            color: #999;
+            margin-right: 15px; 
+            right: 310px;
+        }
+        .top-right .bulb{
+            display: inline-block;
+            position: relative;
+            top: -12px;
+            vertical-align: top;
+        }
+        .right-bottom{
+            margin-top: 30px;
+            min-height: 33px;
+            position: relative;
+        }
+        .type-select{
+            width: 240px;
+            height: 32px;
+            background: #ddd;
+            border-radius: 40px;
+            margin-right: 20px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .type-select li{
+            float: left;
+            height: 32px;
+            width: 80px;
+            line-height: 32px;
+            font-size:12px;
+            z-index: 2;
+            cursor: pointer;
+            color: #333;
+        }
+        .look{
+            width: 97;
+            height: 30;
+            line-height: 32px;
+            display: inline-block;
+            font-size: 12px;
+            margin-right: 20px;
+            color: #333;
+            border-radius: 40px;
+            background: #ddd;
+            padding: 0 20px;
+        }
+        .iconchakan{
+            font-size: 20px;
+            vertical-align: -3px
+        }
+        .down{
+            width: 97;
+            height: 30;
+            line-height: 32px;
+            display: inline-block;
+            font-size: 12px;
+            margin-right: 20px;
+            color: #333;
+            border-radius: 40px;
+            background: #ddd;
+            padding: 0 20px;
+        }
+        .down em{
+            font-size: 20px;
+            vertical-align: -3px
+        }
+        .unload{
+            width: 97;
+            height: 30;
+            line-height: 32px;
+            display: inline-block;
+            font-size: 12px;
+            color: #333;
+            border-radius: 40px;
+            background: #ddd;
+            padding: 0 20px;
+        }
+        .unload em{
+            font-size: 20px;
+            vertical-align: -3px
+        }
+        .help{
+            position: absolute;
+            right: 320px;
+            top: 5px;
+            color: #666;
+            font-size: 12px;
+        }
+        .help em{
+            font-size: 14px;
+            font-weight: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="top">
+            <div class="logo">Iconfont
+                <sup><span class="iconfont iconjiahao"></span></sup>
+            </div>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li>首页</li>
+                    <li>图标库</li>
+                    <li>图标管理</li>
+                    <li>阿里巴巴普惠林</li>
+                    <li>帮助</li>
+                    <li class="act"><span>活动</span></li>
+                    <li><sub><span class="iconfont iconmore"></span></sub></li>
+                </ul>
+            </div>
+            <div class="quick-menu">
+                <ul class="clearfix">
+                    <li>
+                        <i class="iconfont iconsearch"></i>
+                        <input type="text" class="search" name="search" placeholder="请搜索图标和人">
+                    </li>
+                    <li>
+                        <span class="bulb">
+                            <img src="images/bulb.png" alt="">
+                        </span>
+                    </li>
+                    <li>
+                        <i class="iconfont iconshangchuan-copy"></i>
+                    </li>
+                    <li>
+                        <span class="iconfont iconenglish"></span>
+                    </li>
+                    <li>
+                        <i class="iconfont iconcart-Empty"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bottom">
+                <div class="top-bottom-left">
+                    <img src="images/logo.png" class="top-img">
+                    <div class="top-bottom-user">lj1064201288</div>
+                    <div class="block-bar-left">
+                        <ul class="clearfix bar-list">
+                            <li>我的图标</li>
+                            <li>我的收藏</li>
+                            <li>我的项目</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-bar-right">
+                    <div class="top-bottom-right">
+                        <span class="iconfont iconsearch"></span>
+                    </div>
+                    <div class="top-bottom-right wenjian">
+                        <span class="iconfont iconxinjianwenjian"></span>
+                    </div> 
+                    <div class="top-bottom-right paixu">
+                        <span class="iconfont iconpaixu"></span>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="content">
+            <div class="left">
+                <ul class="jlt">
+                    <li>
+                        <span class="iconfont iconwenbenbianji"></span>我发起的项目
+                    </li>
+                    <li>
+                        <span class="iconfont iconcanyu"></span>我参与的项目
+                    </li>
+                    <li>
+                        <span class="iconfont iconshanchuxiangmu"></span>我删除的项目
+                    </li>
+                </ul>
+            </div>
+            <div class="rigth">
+                <div class="right-top">
+                    <div class="content-title">
+                        4.28作业
+                    </div>
+                    <div class="top-left"><span class="num">40</span> 个图标</div>
+                    <div class="top-left"><span class="iconfont icontime"></span> 2020-04-28</div>
+                    <div class="top-left"><span class="iconfont iconpiliang-copy"></span> 批量操作</div>
+                    <div class="top-left"><span class="iconfont iconhuishouzhan"></span> 回收站</div>
+                    <div class="top-left"><span class="iconfont icongengduocaozuo"></span> 更多操作</div>
+                    <div class="top-right"><span class="iconfont iconmembers"></span> 项目成员</div>
+                    <div class="top-right">
+                        <span class="bulb">
+                            <img src="images/bulb.png" alt="">
+                        </span>
+                        x 6
+                    </div>
+                </div>
+                <div class="right-bottom">
+                    <ul class="type-select">
+                        <li>Unicode</li>
+                        <li>Font class</li>
+                        <li>Symbol</li>
+                    </ul>
+                    <span class="look">
+                        <em class="iconfont iconchakan"> </em>
+                        查看在线链接
+                    </span>
+                    <span class="down">
+                        <em class="iconfont iconxiazai1"></em>
+                        下载至本地
+                    </span>
+                    <span class="unload">
+                        <em class="iconfont iconshangchuan-copy"></em>
+                        上传图标至项目
+                    </span>
+                    <span class="help">
+                        <em class="iconfont iconshiyongbangzhu"></em>
+                        使用帮助
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

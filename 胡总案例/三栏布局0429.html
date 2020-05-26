@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+</head>
+
+<body>
+    <style>
+        .about {
+            background: #ccc;
+            margin-bottom: 50px;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .side-bar {
+            float: left;
+            background: pink;
+            width: 180px;
+        }
+
+        .main {
+
+            float: right;
+            width: 1000px;
+            background: #090;
+
+        }
+
+        .clearfixed::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+
+    <div class="about clearfixed">
+        <div class="wrap">
+            <div class="side-bar">left</div>
+            <div class="main">right</div>
+        </div>
+    </div>
+    
+    
+    <style>
+        .wrap {
+            /* width: 800px; */
+        }
+        .news {
+            background: #f1f1f1;
+            border: 1px #f00 solid;
+        }
+        .left {
+            float: left;
+            background: pink;
+            width: 180px;
+        }
+        .center {
+            background: #090;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .right {
+            background: #ccc;
+            width: 180px; 
+            float: right;
+
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+    <!-- 主体盒子不浮动，使用margin -->
+    <div class="wrap clearfixed">
+        <div class="left">left</div>
+        <div class="right">right【学习 HTML】HTML，即超文本 Markup Language）
+            <br>right
+        </div>
+        <div class="center">center HTML】HTML，即超文本标记语言right【学习 </div>
+    </div>
+    <footer>页脚 版权信息</footer>
+    <style>
+        .pro-side {
+            float: left;
+            background: pink;
+            width: 180px;
+            /* margin-top:-21px; */
+            /* 往上提一行 */
+            margin-left: -100%;
+        }
+        .pro-main {
+            float: left;
+            /* background: #f60; */
+            width: 100%;
+            /* padding: 0 200px;
+            box-sizing: border-box; */
+        }
+        .pro-right {
+            background: #ccc;
+            width: 180px; 
+            float: left;
+            margin-left: -180px;
+        }
+        .pro-box {
+            margin-left: 200px;
+            margin-right: 200px;
+            background: #f00;
+        }
+    </style>
+    <section class="pro clearfixed">
+        <div class="pro-main">
+            <div class="pro-box">main</div>
+        </div>
+        <div class="pro-side">left<br>left<br>left</div>
+        <div class="pro-right">right</div>
+    </section>
+    <footer>页脚 版权信息</footer>
+    <hr/>
+    <style>
+        .gd{
+            display: inline-block;
+            background: orange;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .gd-left{
+            display: inline-block;
+            width: 300px;
+            background: red;
+        }
+        .gd-content{
+            display: inline-block;
+            background: green;
+            width: 900px;
+        }
+        .gd-right{
+            display: inline-block;
+            width: 300px;
+        }
+
+    </style>
+    <!-- <div class="gd">
+        <div class="gd-left">left</div>
+        <div class="gd-content">content</div>
+        <div class="gd-right">right</div>
+    </div> -->
+
+    <!-- 1、所有盒子固定宽 -->
+    <!-- 2、中间使用margin，两边使用绝对定位 -->
+    <!-- 3、先写主体，再写两边：主体宽100%，所有盒子左浮动.... -->
+    <!-- 4、先写左右，再写主体 -->
+</body>
+
+</html>

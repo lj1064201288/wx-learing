@@ -1,0 +1,216 @@
+@media screen and (max-width: 415px) {
+    .container {
+        width: 375px;
+    }
+    .menu .icongengduo {
+        top: 0.5em;
+        font-size: 20px;
+    }
+    .right-side span {
+        font-size: 16px;
+    }
+    .nav-list li {
+        padding-left: 10%;
+        height: 50px;
+     }
+    .nav-list a {
+        display: block;
+        color: #ffffff;
+        padding: 0.2em 0;
+        padding-left: 1.5em;
+        width: 100px;
+        font-size: 12px;
+        border-bottom-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+
+    .ch {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .en {
+        font-size: 12px;
+    }
+    .en:before {
+        border-top: 2px #14916a solid;
+    }
+    .wel-text {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 10px 0;
+        word-break: break-all;
+    }
+    .wel-contact {
+        height: 150px;
+    }
+    .footer-phone {
+        width: 323px;
+        height: 44px;
+    }
+    .footer-phone-tele {
+        font-size: 18px;
+        color: #14916a;
+    }
+    .phone {
+        font-size: 18px;
+    }
+    .footer-contact p {
+        line-height: 26px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .footer-nav {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .footer-nav a {
+        width: 20%;
+        line-height: 24px;
+        font-size: 12px;
+    }
+    .signature img {
+        width: 100%;
+    }
+    .footer-entry p {
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .resume-text p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .resume-all {
+        font-size: 14px;
+    }
+    .iconfont.iconxiangzuo {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;;
+    }
+    .iconfont.iconxiangyou {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;;
+    }
+    .desc-ch {
+        font-size: 14px;
+    }
+    .desc-en {
+        font-size: 10px;
+        color: #666666;
+    }
+    .qrcode img {
+        width: 80px;
+        height: 80px;
+    }
+    .qrcode-desc h3{
+        font-size: 16px;
+        color: #f6f6f6;
+    }
+    .scan-desc {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        color: #333333;
+    }
+    .com-desc {
+
+        padding: 1em 0.5em;
+    }
+    .com-in {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .off-hours {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .contact-tit h3 {
+        font-size: 18px;
+        line-height: 0;
+        color: #333333;
+        font-weight: 600;
+    }
+    .contact-form label {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .contact-form input, .contact-form select {
+        width: 280px;
+        height: 36px;
+        margin-left: 1em;
+        font-size: 12px;
+        margin-bottom: 1em;
+       
+    }
+    .contact-form a {
+        font-size: 12px;
+        width: 160px;
+        height: 30px;
+    }
+    .detail-tit h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .detail-desc {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .detail-text-desc {
+        font-size: 12px;
+    }
+    .detail-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .detail-footer div {
+        height: 30px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .prv span {
+        padding-right: 2em;
+    }
+    .next span {
+        padding-right: 2em;
+    }
+    .news-item-img img{
+        display: flex;
+        width: 100%;
+    }
+    .news-item-tit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .news-desc {
+        font-size: 10px;
+        line-height: 10px;
+        color: #999999;
+    }
+    .news-page a {
+        width: 86px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    .case-item::after {
+        right: -15px;
+        top: -15px;;
+        width: 30px;
+        height: 30px;
+    }
+    .beau {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .lay {
+       
+        font-size: 18px;
+    }
+}

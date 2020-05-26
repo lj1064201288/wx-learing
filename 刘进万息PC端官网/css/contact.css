@@ -1,0 +1,98 @@
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+.tit {
+    position: relative;
+    text-align: center;
+}
+.tit h4 {
+    font-size: 40px;
+}
+.main .iconfont.iconyuandian {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-size: 36px;
+    color: #e6e6e6;
+    opacity: .8;
+}
+.pro-list {
+    margin-top: 40px;
+}
+.pro-list li {
+    float: left;
+    width: 25%;
+}
+.pro-text-tit a {
+    font-size: 20px;
+    color: #333333;
+}
+.pro-text-tit a:hover {
+    color: #ffa000;
+    text-decoration: underline;
+}
+.pro-list p {
+    font-size: 16px;
+    color: #333333;
+} 
+.elve {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 60px;
+    right: 10px;
+    bottom: 10px;
+    background-image: url(../images/pulib/jl-img.png);
+}
+.business-hezuo {
+    background-position: -300px 0 ;
+}
+.sell-consult {
+    background-position: -300px -100px;
+}
+.media-consult {
+    width: 78px;
+    background-position: -300px -200px;
+}
+.desc-pop {
+    background-position: -300px -300px;
+}
+.address {
+    margin-top: 50px;
+}
+.address-map {
+    margin-top: 20px;
+    padding: 40px;
+    border: 1px #cccccc solid;
+    box-sizing: border-box;
+}
+.map-desc {
+    text-align: center;
+}
+.map-desc span {
+    color: #ffa712;
+}
+.map-desc h5 {
+    position: relative;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+.map-desc h5::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 540px;
+    display: block;
+    width: 30px;
+    height: 0;
+    border-top: 1px #ffa000 solid; 
+}
+.address-detail {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 400;
+}

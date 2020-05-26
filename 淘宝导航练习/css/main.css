@@ -1,0 +1,125 @@
+.nav-top {
+    height: 30px;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-image:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}
+
+.nav-content {
+    line-height: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav-content li {
+    float: left;
+}
+.nav-tit {
+    color: #fff;
+    float: left;
+    width: 240px;
+    text-align: center;
+    font-size: 16px;
+    background: #ff5000;
+}
+.nav-top-taobao {
+    float: left;
+    width: 190px;
+}
+
+.nav-top-taobao::after, .nav-top-dis::after, .nav-top-outside::after {
+    position: relative;
+    left: 8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 2px solid #ffffff;
+}
+.nav-top-taobao li {
+    text-align: center;
+}
+.nav-top-item {
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav-top-dis {
+    float: left;
+    width: 350px;
+    text-align: center;
+}
+.nav-side-list {
+    position: relative;
+    left: -5px;
+    width: 1200px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+}
+.nav-side {
+    width: 218px;
+    border: 1px solid #ff5000;
+    padding-left: 20px;
+}
+.nav-side-item {
+    line-height: 32px;
+    color: #666666;
+   
+}
+.nav-side-item:hover, .nav-side-item:hover>a{
+    background: #ffe4dc;
+    color: #ff5000;
+}
+.nav-side-item:hover .nav-side-child {
+    display: block;
+}
+
+.nav-side-item a {
+    color: #666;
+    font-size: 14px;
+}
+.nav-side-item>a:hover {
+    text-decoration: underline #ff5000;
+}
+.nav-side-item span {
+    position: relative;
+    right: -80px;
+    font-size: 12px;
+}
+.nav-side-child {
+    width: 890px;
+    position: absolute;
+    top: 0;
+    left: 244px;
+    border: 3px #ff5000 solid;
+    padding-bottom: 12px;
+    display: none;
+}
+.side-child-con {
+    width: 600px;
+}
+.side-child-item {
+    padding: 10px;
+    border-right:1px solid #f4f4f4; 
+}
+.child-item-top {
+    line-height: 32px;
+}
+.child-item-tit {
+    float: left;
+}
+.child-item-more {
+    position: relative;
+    right: 10px;
+    float: right;
+}
+.child-item-more:hover {
+    color: #ff5000;
+    text-decoration: underline #ff5000;
+}
+.child-item-more>span {
+    right: 5px;
+}
+.child-item-content a{
+    font-size: 14px;
+    word-break: keep-all;
+    margin-right: 10px;
+}

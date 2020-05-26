@@ -1,0 +1,97 @@
+.detail-tit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background: #fafafa;
+    padding: 20px 10px;
+    border-top: 1px #eeeeee solid;
+    border-bottom: 1px #eeeeee solid;
+}
+.detail-tit h4 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.detail-desc {
+    display: flex;
+    margin-top: 1em;
+    font-size: 20px;
+    line-height: 35px;
+}
+.release {
+    margin-right: 1em;
+}
+.detail-desc span {
+    color: #14916a;
+}
+.detail-text-desc {
+    padding: 10px;
+    margin-right: 20px;
+    padding-bottom: 0;
+    padding-top: 30px;
+    color: #999999;
+    font-size: 24px;
+}
+.detail-text {
+    padding: 0 10px;
+}
+.detail-text p {
+    font-size: 24px;
+    line-height: 36px;
+}
+.detail-text img {
+    width: 100%;
+   
+}
+.detail-footer {
+    display: flex;
+    margin: 50px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.detail-footer div {
+    width: 646px;
+    max-width: 646px;
+    height: 60px;
+    font-size: 28px;
+    background: #14916a;
+    display: flex;
+    padding: 0 30px;
+    padding-right: 50px;
+    align-items: center;
+    border-bottom-right-radius: 1.3em;
+    border-top-left-radius: 1.3em;
+    color: #ffffff;
+    overflow: hidden;
+    line-height: 35px;
+    white-space: nowrap;
+}
+.prv {
+    display: flex;
+    margin-bottom: 40px;
+}
+.prv span {
+    display: flex;
+    border-right: 1px rgba(255, 255, 255, .3) solid;
+    padding-right: 10px;
+    white-space: nowrap;
+    height: 60px;
+    align-items: center;
+}
+.next span {
+    display: flex;
+    border-right: 1px rgba(255, 255, 255, .3) solid;
+    padding-right: 10px;
+    white-space: nowrap;
+    height: 60px;
+    align-items: center;
+}
+.detail-footer a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    margin-left: 10px;
+}
+.detail-footer a:hover {
+    text-decoration: underline;
+}

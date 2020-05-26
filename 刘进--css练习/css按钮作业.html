@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>按钮作业</title>
+    <style>
+        .btn-box{
+            height: 100px;
+            background-color: #666;
+            position: relative;
+        }
+        .btn{
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            margin: 10px;
+            padding: 5px;
+            color:aliceblue;
+            background-color: orangered;
+            border: 1px solid orangered;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+        }
+        .top::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-bottom: 5px solid orangered;
+            position: absolute;
+            left: 45px;
+            margin-top: -15px;
+           
+        }
+        .bottom::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid orangered;
+            position: absolute;
+            top: 42px;
+            margin-left: -30px;
+
+        }
+        .left::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-right: 5px solid orangered;
+            position: absolute;
+            left: auto;
+            margin-top: 5px;
+            margin-left: -70px; 
+        }
+        .right::after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-left: 5px solid orangered;
+            position: absolute;
+            top: 23px;
+            margin-left: 9px;
+        }
+        .btn-box .btn:hover{
+            background-color:#666;
+        }
+        .btn-box:hover a{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-box">
+        <a href="#" class="btn top">按钮(上)</a>
+        <a href="#" class="btn bottom">按钮(下)</a>
+        <a href="#" class="btn left">按钮(左)</a>
+        <a href="#" class="btn right">按钮(右)</a>
+    </div>
+</body>
+</html>

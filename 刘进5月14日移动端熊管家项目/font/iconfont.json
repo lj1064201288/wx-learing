@@ -1,0 +1,37 @@
+{
+  "id": "1821163",
+  "name": "移动端熊管家",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8949038",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "9568049",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "9841814",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "5121509",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
